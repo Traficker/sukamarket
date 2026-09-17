@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUKA MARKET | Jardines Botánicos, Investigación y Sostenibilidad</title>
+  <meta name="description" content="Entidad Sin Ánimo de Lucro (ESAL) en San Andrés Isla fundada en 2005. Dedicada a la conservación de jardines botánicos, reservas naturales e investigación socioambiental. NIT 900026193-0.">
+  <link rel="canonical" href="https://sukamarket.online/">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sukamarket.online/">
+  <meta property="og:title" content="SUKA MARKET - Jardines Botánicos y Reservas Naturales">
+  <meta property="og:description" content="Conservación botánica, investigación socioambiental y sostenibilidad insular en San Andrés Isla. NIT 900026193-0.">
+  <meta property="og:image" content="https://sukamarket.online/hero.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#F4F7F4',
+              100: '#E6EFE6',
+              200: '#CFDEC0',
+              300: '#A4C3A2',
+              500: '#4E7D68',
+              600: '#3D6553',
+              700: '#2D4E40',
+              800: '#1F372D',
+              900: '#14251E',
+            },
+            sand: {
+              50: '#FAF8F5',
+              100: '#F4EFEA',
+              200: '#E8DFD5',
+              800: '#4A4036',
+              900: '#2C251E',
+            },
+            terracotta: '#C06E52',
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF8F5;
+      color: #1F2925;
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Outfit', sans-serif;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(226, 232, 228, 0.8);
+    }
+    .badge-glow {
+      box-shadow: 0 0 20px rgba(78, 125, 104, 0.15);
+    }
+  </style>
+
+  <script src="config.js"></script>
+</head>
+<body class="selection:bg-brand-500 selection:text-white antialiased">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-brand-900 text-white text-xs py-2 px-4 border-b border-brand-800/50">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>Entidad Sin Ánimo de Lucro (ESAL) • NIT: <strong>900026193-0</strong> • San Andrés Isla, Colombia</span>
+      </div>
+      <div class="flex items-center gap-4 text-brand-200">
+        <a href="tel:+573044053539" class="hover:text-white transition flex items-center gap-1">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          +57 304 405 3539
+        </a>
+        <span>|</span>
+        <a href="mailto:contacto@sukamarket.online" class="hover:text-white transition flex items-center gap-1">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          contacto@sukamarket.online
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-sand-200/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <img src="logo.jpg" alt="Suka Market Logo" class="h-12 w-12 rounded-xl object-contain border border-brand-100 shadow-sm transition group-hover:scale-105">
+        <div>
+          <span class="block text-xl font-heading font-extrabold tracking-tight text-brand-900 group-hover:text-brand-600 transition">SUKA MARKET</span>
+          <span class="block text-[11px] font-medium tracking-wide uppercase text-brand-500">Jardines Botánicos & Reservas</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-sand-800">
+        <a href="#inicio" class="hover:text-brand-600 transition">Inicio</a>
+        <a href="#proposito" class="hover:text-brand-600 transition">Propósito</a>
+        <a href="#lineas" class="hover:text-brand-600 transition">Líneas de Acción</a>
+        <a href="#transparencia" class="hover:text-brand-600 transition">Ficha Institucional</a>
+        <a href="#galeria" class="hover:text-brand-600 transition">Espacios</a>
+        <a href="#contacto" class="hover:text-brand-600 transition">Contacto</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="flex items-center gap-3">
+        <a href="#contacto" class="hidden sm:inline-flex items-center justify-center px-4 py-2.5 rounded-full text-xs font-semibold text-white bg-brand-700 hover:bg-brand-800 shadow-sm transition-all hover:shadow hover:-translate-y-0.5">
+          Conectar con Nosotros
+        </a>
+        <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-sand-800 hover:bg-sand-100 transition" aria-label="Abrir Menú">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-sand-200 px-4 pt-3 pb-6 space-y-3">
+      <a href="#inicio" class="block py-2 text-sm font-medium text-sand-800 hover:text-brand-600">Inicio</a>
+      <a href="#proposito" class="block py-2 text-sm font-medium text-sand-800 hover:text-brand-600">Propósito</a>
+      <a href="#lineas" class="block py-2 text-sm font-medium text-sand-800 hover:text-brand-600">Líneas de Acción</a>
+      <a href="#transparencia" class="block py-2 text-sm font-medium text-sand-800 hover:text-brand-600">Ficha Institucional</a>
+      <a href="#galeria" class="block py-2 text-sm font-medium text-sand-800 hover:text-brand-600">Espacios</a>
+      <a href="#contacto" class="block py-2 text-sm font-medium text-sand-800 hover:text-brand-600">Contacto</a>
+      <a href="#contacto" class="block text-center py-3 rounded-xl bg-brand-700 text-white font-medium text-sm">Contáctanos Directamente</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Text Column -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100/70 border border-brand-200/80 text-brand-800 text-xs font-semibold">
+            <span class="w-2 h-2 rounded-full bg-brand-600"></span>
+            <span>Desde 2005 • 21+ Años de Custodia Botánica</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-brand-900 tracking-tight leading-[1.15]">
+            Jardines Botánicos, Investigación y Conservación en <span class="text-brand-600 underline decoration-brand-300 decoration-wavy underline-offset-8">San Andrés</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-sand-800 leading-relaxed max-w-2xl">
+            Somos <strong>SUKA MARKET</strong>, una Entidad Sin Ánimo de Lucro comprometida con la protección de la biodiversidad vegetal, el estudio de especies nativas y la divulgación de prácticas sostenibles en la Reserva de Biosfera Seaflower.
+          </p>
+
+          <div class="pt-2 flex flex-wrap items-center gap-4">
+            <a href="#lineas" class="inline-flex items-center justify-center px-6 py-3.5 rounded-full text-sm font-semibold text-white bg-brand-700 hover:bg-brand-800 shadow-md hover:shadow-lg transition-all hover:-translate-y-0.5">
+              Explorar Nuestras Iniciativas
+              <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+            <a href="#transparencia" class="inline-flex items-center justify-center px-6 py-3.5 rounded-full text-sm font-semibold text-sand-800 bg-sand-100 hover:bg-sand-200 border border-sand-200 transition-all">
+              Ver Certificación Legal
+            </a>
+          </div>
+
+          <!-- Quick Trust Badges -->
+          <div class="pt-6 border-t border-sand-200 flex flex-wrap items-center gap-6 text-xs text-sand-800">
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-brand-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span>Personería Jurídica Registrada</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-brand-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span>Vigilancia DIAN San Andrés</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-brand-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span>CIIU R9103 & M7220</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <!-- Background Glow -->
+            <div class="absolute -inset-4 bg-gradient-to-tr from-brand-300/40 to-sand-200/50 rounded-3xl blur-2xl -z-10"></div>
+            
+            <div class="rounded-3xl overflow-hidden border border-sand-200 shadow-xl bg-white">
+              <img src="hero.jpg" alt="Suka Market Espacio Botánico" class="w-full h-80 object-cover object-center">
+              
+              <div class="p-6 bg-white space-y-4">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <span class="text-xs uppercase tracking-wider font-semibold text-brand-600">Espacio de Exhibición & Concepto Verde</span>
+                    <h3 class="text-lg font-heading font-bold text-brand-900">Suka Market San Andrés</h3>
+                  </div>
+                  <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                    Activo 2026
+                  </span>
+                </div>
+                
+                <p class="text-xs text-sand-800 leading-relaxed">
+                  Promovemos el cuidado de la flora nativa mediante talleres educativos, exhibición de plantas botánicas y modelos de desarrollo comunitario en el archipiélago.
+                </p>
+
+                <div class="grid grid-cols-2 gap-3 pt-2 text-xs">
+                  <div class="p-2.5 rounded-xl bg-sand-50 border border-sand-100">
+                    <span class="block text-sand-900/60 font-medium">Inscripción CC:</span>
+                    <strong class="text-brand-900 font-semibold">S0500322</strong>
+                  </div>
+                  <div class="p-2.5 rounded-xl bg-sand-50 border border-sand-100">
+                    <span class="block text-sand-900/60 font-medium">NIT Oficial:</span>
+                    <strong class="text-brand-900 font-semibold">900026193-0</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics Bar -->
+  <section class="py-10 bg-brand-900 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="space-y-1">
+          <div class="text-3xl sm:text-4xl font-heading font-extrabold text-emerald-400">2005</div>
+          <div class="text-xs sm:text-sm font-semibold tracking-wide text-brand-100">Año de Constitución</div>
+          <div class="text-[11px] text-brand-300">Más de 20 años de labor</div>
+        </div>
+        <div class="space-y-1">
+          <div class="text-3xl sm:text-4xl font-heading font-extrabold text-emerald-400">100%</div>
+          <div class="text-xs sm:text-sm font-semibold tracking-wide text-brand-100">Sin Ánimo de Lucro</div>
+          <div class="text-[11px] text-brand-300">Entidad ESAL Certificada</div>
+        </div>
+        <div class="space-y-1">
+          <div class="text-3xl sm:text-4xl font-heading font-extrabold text-emerald-400">R9103</div>
+          <div class="text-xs sm:text-sm font-semibold tracking-wide text-brand-100">CIIU Principal</div>
+          <div class="text-[11px] text-brand-300">Jardines & Reservas</div>
+        </div>
+        <div class="space-y-1">
+          <div class="text-3xl sm:text-4xl font-heading font-extrabold text-emerald-400">88001</div>
+          <div class="text-xs sm:text-sm font-semibold tracking-wide text-brand-100">San Andrés Isla</div>
+          <div class="text-[11px] text-brand-300">Reserva de Biosfera Seaflower</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Propósito Section -->
+  <section id="proposito" class="py-20 md:py-28 bg-sand-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 relative order-2 lg:order-1">
+          <div class="grid grid-cols-2 gap-4">
+            <img src="gallery-1.jpg" alt="Cuidado botánico y germinación" class="w-full h-64 object-cover rounded-2xl shadow-sm border border-sand-200">
+            <img src="gallery-2.jpg" alt="Senderos ecológicos en San Andrés" class="w-full h-64 object-cover rounded-2xl shadow-sm border border-sand-200 mt-6">
+          </div>
+          <div class="absolute -bottom-6 left-6 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-sand-200 shadow-lg max-w-xs">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-700">
+                🌱
+              </div>
+              <div>
+                <p class="text-xs font-bold text-brand-900">Conservación Endémica</p>
+                <p class="text-[11px] text-sand-800">Protección del ecosistema insular</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 space-y-6 order-1 lg:order-2">
+          <div class="inline-block px-3 py-1 rounded-md bg-brand-100 text-brand-800 text-xs font-semibold tracking-wide uppercase">
+            Quiénes Somos & Misión
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-brand-900 tracking-tight">
+            Comprometidos con el equilibrio ecológico del archipiélago
+          </h2>
+
+          <p class="text-sand-800 leading-relaxed text-sm sm:text-base">
+            Constituida formalmente el <strong>10 de Mayo de 2005</strong> ante la Cámara de Comercio de San Andrés, Providencia y Santa Catalina, <strong>SUKA MARKET</strong> nació con la visión de salvaguardar el patrimonio natural del archipiélago.
+          </p>
+
+          <p class="text-sand-800 leading-relaxed text-sm sm:text-base">
+            A través de actividades clasificadas bajo el código <strong>CIIU R9103</strong> (Jardines Botánicos y Reservas Naturales) e investigaciones aplicadas (<strong>CIIU M7220</strong>), articulamos a la comunidad, la ciencia y la educación ambiental para generar un impacto tangible y duradero.
+          </p>
+
+          <div class="space-y-3 pt-2">
+            <div class="flex items-start gap-3">
+              <div class="mt-1 w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 text-xs font-bold">✓</div>
+              <p class="text-xs sm:text-sm text-sand-800"><strong>Preservación de Especies:</strong> Mantenimiento y estudio de flora insular en riesgo y fomento de micro-reservas.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="mt-1 w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 text-xs font-bold">✓</div>
+              <p class="text-xs sm:text-sm text-sand-800"><strong>Investigación Experimental:</strong> Estudios participativos socioambientales para el fortalecimiento comunitario.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="mt-1 w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 text-xs font-bold">✓</div>
+              <p class="text-xs sm:text-sm text-sand-800"><strong>Cultura y Educación:</strong> Talleres ciudadanos sobre germinación responsable, huertos y compostaje.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Líneas de Acción / CIIU Section -->
+  <section id="lineas" class="py-20 md:py-28 bg-white border-y border-sand-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <span class="inline-block px-3 py-1 rounded-md bg-brand-100 text-brand-800 text-xs font-semibold tracking-wide uppercase">
+          Ejes Operativos Registrados
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-brand-900 tracking-tight">
+          Nuestras Líneas de Acción Institucional
+        </h2>
+        <p class="text-sand-800 text-sm sm:text-base">
+          Desarrollamos nuestras actividades en plena concordancia con el objeto social registrado ante las autoridades mercantiles y tributarias de Colombia.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Card 1: R9103 -->
+        <div class="p-8 rounded-3xl bg-sand-50 border border-sand-200 hover:border-brand-300 hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-brand-700 text-white flex items-center justify-center text-2xl shadow-sm">
+              🌿
+            </div>
+            <span class="inline-block px-2.5 py-1 rounded text-[11px] font-bold uppercase tracking-wider bg-brand-100 text-brand-800">
+              CIIU R9103 • Principal
+            </span>
+            <h3 class="text-xl font-heading font-bold text-brand-900">
+              Jardines Botánicos & Reservas Naturales
+            </h3>
+            <p class="text-xs sm:text-sm text-sand-800 leading-relaxed">
+              Propagación, conservación y monitoreo de especies botánicas insulares. Creamos bancos vivos de semillas, enriquecimiento de flora y espacios de apreciación de la biodiversidad caribeña.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-sand-200/80 mt-6">
+            <span class="text-xs font-semibold text-brand-700">Propósito: Conservación activa de ecosistemas insulares</span>
+          </div>
+        </div>
+
+        <!-- Card 2: M7220 -->
+        <div class="p-8 rounded-3xl bg-sand-50 border border-sand-200 hover:border-brand-300 hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-sand-800 text-white flex items-center justify-center text-2xl shadow-sm">
+              🔬
+            </div>
+            <span class="inline-block px-2.5 py-1 rounded text-[11px] font-bold uppercase tracking-wider bg-sand-200 text-sand-900">
+              CIIU M7220 • Secundaria
+            </span>
+            <h3 class="text-xl font-heading font-bold text-brand-900">
+              Investigación Socioambiental Experimental
+            </h3>
+            <p class="text-xs sm:text-sm text-sand-800 leading-relaxed">
+              Investigaciones aplicadas sobre impacto climático insular, saberes etnobotánicos tradicionales y desarrollo de metodologías para la resiliencia social y ecológica en territorios costeros.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-sand-200/80 mt-6">
+            <span class="text-xs font-semibold text-brand-700">Propósito: Generación de conocimiento científico y comunitario</span>
+          </div>
+        </div>
+
+        <!-- Card 3: S9499 -->
+        <div class="p-8 rounded-3xl bg-sand-50 border border-sand-200 hover:border-brand-300 hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-terracotta text-white flex items-center justify-center text-2xl shadow-sm">
+              🤝
+            </div>
+            <span class="inline-block px-2.5 py-1 rounded text-[11px] font-bold uppercase tracking-wider bg-amber-100 text-amber-900">
+              CIIU S9499 • Asociativo
+            </span>
+            <h3 class="text-xl font-heading font-bold text-brand-900">
+              Cultura, Comunidad & Bio-Mercado
+            </h3>
+            <p class="text-xs sm:text-sm text-sand-800 leading-relaxed">
+              Fomento de redes comunitarias sostenibles, voluntariado ecológico, talleres sobre plantas ornamentales y comercialización responsable de insumos botánicos para la autosuficiencia ecológica.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-sand-200/80 mt-6">
+            <span class="text-xs font-semibold text-brand-700">Propósito: Vinculación comunitaria y consumo responsable</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Legal & Transparency Table Section -->
+  <section id="transparencia" class="py-20 bg-sand-100/70">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto space-y-3 mb-12">
+        <span class="inline-block px-3 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-semibold tracking-wide uppercase">
+          Transparencia y Certificación Mercantil
+        </span>
+        <h2 class="text-3xl font-heading font-extrabold text-brand-900 tracking-tight">
+          Ficha Institucional de Existencia Legal
+        </h2>
+        <p class="text-sand-800 text-sm">
+          Información pública verificada de acuerdo con el Certificado de Inscripción de Documentos expedido por la Cámara de Comercio.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-3xl border border-sand-200 shadow-md overflow-hidden">
+        <div class="p-6 bg-brand-900 text-white flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <span class="text-xs uppercase text-emerald-400 font-bold tracking-wider">Cámara de Comercio de San Andrés, Providencia y Santa Catalina</span>
+            <h3 class="text-xl font-heading font-bold">SUKA MARKET — Entidad Sin Ánimo de Lucro</h3>
+          </div>
+          <div class="px-3 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs font-semibold">
+            ✓ Renovación Activa 2026
+          </div>
+        </div>
+
+        <div class="divide-y divide-sand-200 text-xs sm:text-sm">
+          <div class="grid grid-cols-1 sm:grid-cols-3 p-4 hover:bg-sand-50 transition">
+            <span class="font-semibold text-sand-900/70">Razón Social:</span>
+            <span class="sm:col-span-2 font-bold text-brand-900">SUKA MARKET</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 p-4 hover:bg-sand-50 transition">
+            <span class="font-semibold text-sand-900/70">Organización Jurídica:</span>
+            <span class="sm:col-span-2 text-sand-900">Entidad Sin Ánimo de Lucro (ESAL) - Persona Jurídica Principal</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 p-4 hover:bg-sand-50 transition">
+            <span class="font-semibold text-sand-900/70">NIT / Identificación Tributaria:</span>
+            <span class="sm:col-span-2 font-mono font-bold text-brand-800">900026193-0</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 p-4 hover:bg-sand-50 transition">
+            <span class="font-semibold text-sand-900/70">Matrícula / Inscripción No:</span>
+            <span class="sm:col-span-2 font-mono font-bold text-brand-800">S0500322</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 p-4 hover:bg-sand-50 transition">
+            <span class="font-semibold text-sand-900/70">Fecha de Inscripción:</span>
+            <span class="sm:col-span-2 text-sand-900">10 de Mayo de 2005 (Libro I No. 1146)</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 p-4 hover:bg-sand-50 transition">
+            <span class="font-semibold text-sand-900/70">Estado y Renovación:</span>
+            <span class="sm:col-span-2 text-emerald-800 font-semibold">Año Renovado: 2026 (Activo hasta Julio 26 de 2026)</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 p-4 hover:bg-sand-50 transition">
+            <span class="font-semibold text-sand-900/70">Grupo NIIF:</span>
+            <span class="sm:col-span-2 text-sand-900">Grupo III - Microempresas</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 p-4 hover:bg-sand-50 transition">
+            <span class="font-semibold text-sand-900/70">Domicilio Principal y Judicial:</span>
+            <span class="sm:col-span-2 text-sand-900">Av. Juan XXIII 4 205, San Andrés Isla (Código Postal 88001)</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 p-4 hover:bg-sand-50 transition">
+            <span class="font-semibold text-sand-900/70">Teléfono Comercial:</span>
+            <span class="sm:col-span-2 text-sand-900 font-mono">+57 304 405 3539</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 p-4 hover:bg-sand-50 transition">
+            <span class="font-semibold text-sand-900/70">Correo Notificaciones:</span>
+            <span class="sm:col-span-2 text-sand-900 font-mono">contacto@sukamarket.online</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 p-4 hover:bg-sand-50 transition">
+            <span class="font-semibold text-sand-900/70">Administración Tributaria:</span>
+            <span class="sm:col-span-2 text-sand-900">DIAN San Andrés</span>
+          </div>
+        </div>
+
+        <div class="p-4 bg-sand-50 text-center text-xs text-sand-800 border-t border-sand-200">
+          Documento expedido y validado bajo la vigilancia de los entes reguladores de la República de Colombia.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Showcase -->
+  <section id="galeria" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto space-y-3 mb-14">
+        <span class="inline-block px-3 py-1 rounded-md bg-brand-100 text-brand-800 text-xs font-semibold tracking-wide uppercase">
+          Entorno & Prácticas
+        </span>
+        <h2 class="text-3xl font-heading font-extrabold text-brand-900 tracking-tight">
+          Nuestra Galería Botánica y Comunitaria
+        </h2>
+        <p class="text-sand-800 text-sm">
+          Imágenes que reflejan nuestro compromiso con las plantas ornamentales, la educación ambiental y el amor por la naturaleza insular.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="group relative rounded-3xl overflow-hidden shadow-sm border border-sand-200">
+          <img src="hero.jpg" alt="Boutique y Colección Botánica" class="w-full h-80 object-cover transition duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6 flex flex-col justify-end text-white">
+            <span class="text-[11px] font-semibold tracking-wider uppercase text-emerald-300">Exhibición Viva</span>
+            <h4 class="text-lg font-heading font-bold">Colección y Boutique Botánica</h4>
+            <p class="text-xs text-gray-200 mt-1">Especies aclimatadas e insumos orgánicos para el cuidado del hogar.</p>
+          </div>
+        </div>
+
+        <div class="group relative rounded-3xl overflow-hidden shadow-sm border border-sand-200">
+          <img src="gallery-1.jpg" alt="Talleres de Siembra y Propagación" class="w-full h-80 object-cover transition duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6 flex flex-col justify-end text-white">
+            <span class="text-[11px] font-semibold tracking-wider uppercase text-emerald-300">Educación Práctica</span>
+            <h4 class="text-lg font-heading font-bold">Germinación y Talleres Vivos</h4>
+            <p class="text-xs text-gray-200 mt-1">Capacitaciones comunitarias para la multiplicación de especies verdes.</p>
+          </div>
+        </div>
+
+        <div class="group relative rounded-3xl overflow-hidden shadow-sm border border-sand-200">
+          <img src="gallery-2.jpg" alt="Senderos y Reservas Naturales" class="w-full h-80 object-cover transition duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6 flex flex-col justify-end text-white">
+            <span class="text-[11px] font-semibold tracking-wider uppercase text-emerald-300">Ecoturismo Responsable</span>
+            <h4 class="text-lg font-heading font-bold">Senderos y Paisajes Naturales</h4>
+            <p class="text-xs text-gray-200 mt-1">Exploración de la exuberancia vegetal y micro-hábitats insulares.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Location Section -->
+  <section id="contacto" class="py-20 md:py-28 bg-sand-50 border-t border-sand-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Contact Information -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="inline-block px-3 py-1 rounded-md bg-brand-100 text-brand-800 text-xs font-semibold tracking-wide uppercase">
+            Canales de Atención
+          </span>
+          <h2 class="text-3xl font-heading font-extrabold text-brand-900 tracking-tight">
+            Ponte en Contacto con Suka Market
+          </h2>
+          <p class="text-sand-800 text-sm leading-relaxed">
+            ¿Deseas conocer más sobre nuestros programas botánicos, voluntariado o alianzas socioambientales? Estamos a tu completa disposición en San Andrés Isla.
+          </p>
+
+          <div class="space-y-4 pt-2 text-xs sm:text-sm">
+            <div class="flex items-start gap-3 p-4 rounded-2xl bg-white border border-sand-200">
+              <div class="w-9 h-9 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center flex-shrink-0">
+                📍
+              </div>
+              <div>
+                <strong class="block text-brand-900">Sede Principal:</strong>
+                <span class="text-sand-800">Av. Juan XXIII 4 205, San Andrés Isla</span>
+                <span class="block text-[11px] text-sand-800/60">Código Postal: 88001 • Colombia</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-4 rounded-2xl bg-white border border-sand-200">
+              <div class="w-9 h-9 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center flex-shrink-0">
+                📞
+              </div>
+              <div>
+                <strong class="block text-brand-900">Línea Telefónica & WhatsApp:</strong>
+                <a href="tel:+573044053539" class="text-brand-600 font-semibold hover:underline">+57 304 405 3539</a>
+                <span class="block text-[11px] text-sand-800/60">Atención Lunes a Viernes 8:00 AM - 5:30 PM</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-4 rounded-2xl bg-white border border-sand-200">
+              <div class="w-9 h-9 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center flex-shrink-0">
+                ✉️
+              </div>
+              <div>
+                <strong class="block text-brand-900">Correo Electrónico Institucional:</strong>
+                <a href="mailto:contacto@sukamarket.online" class="text-brand-600 font-semibold hover:underline">contacto@sukamarket.online</a>
+                <span class="block text-[11px] text-sand-800/60">Canal oficial de notificaciones y solicitudes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="lg:col-span-7">
+          <div class="bg-white p-8 sm:p-10 rounded-3xl border border-sand-200 shadow-md">
+            <h3 class="text-xl font-heading font-bold text-brand-900 mb-2">Envíanos un Mensaje</h3>
+            <p class="text-xs text-sand-800 mb-6">Completa el formulario y te responderemos a la mayor brevedad posible.</p>
+
+            <form id="contactForm" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="name" class="block text-xs font-semibold text-sand-900 mb-1">Nombre Completo *</label>
+                  <input type="text" id="name" required class="w-full px-4 py-2.5 rounded-xl border border-sand-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-xs sm:text-sm bg-sand-50" placeholder="Ej. Ana Pérez">
+                </div>
+                <div>
+                  <label for="email" class="block text-xs font-semibold text-sand-900 mb-1">Correo Electrónico *</label>
+                  <input type="email" id="email" required class="w-full px-4 py-2.5 rounded-xl border border-sand-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-xs sm:text-sm bg-sand-50" placeholder="correo@ejemplo.com">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="phone" class="block text-xs font-semibold text-sand-900 mb-1">Teléfono Móvil</label>
+                  <input type="tel" id="phone" class="w-full px-4 py-2.5 rounded-xl border border-sand-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-xs sm:text-sm bg-sand-50" placeholder="+57 300 000 0000">
+                </div>
+                <div>
+                  <label for="subject" class="block text-xs font-semibold text-sand-900 mb-1">Motivo de Consulta *</label>
+                  <select id="subject" required class="w-full px-4 py-2.5 rounded-xl border border-sand-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-xs sm:text-sm bg-sand-50">
+                    <option value="botanica">Jardines Botánicos & Flora</option>
+                    <option value="investigacion">Investigación Socioambiental</option>
+                    <option value="talleres">Talleres Comunitarios & Formación</option>
+                    <option value="institucional">Información Institucional / Legal</option>
+                    <option value="otro">Otro Motivo</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="message" class="block text-xs font-semibold text-sand-900 mb-1">Mensaje o Solicitud *</label>
+                <textarea id="message" rows="4" required class="w-full px-4 py-2.5 rounded-xl border border-sand-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-xs sm:text-sm bg-sand-50" placeholder="¿En qué podemos colaborar contigo?"></textarea>
+              </div>
+
+              <div class="flex items-start gap-2 pt-1">
+                <input type="checkbox" id="policy" required class="mt-1 rounded text-brand-600 focus:ring-brand-500">
+                <label for="policy" class="text-[11px] text-sand-800 leading-tight">
+                  He leído y acepto la <a href="politica-de-privacidad.html" target="_blank" class="text-brand-600 font-semibold underline">Política de Privacidad y Tratamiento de Datos Personales</a> conforme a la Ley 1581 de 2012.
+                </label>
+              </div>
+
+              <button type="submit" class="w-full py-3.5 px-6 rounded-xl text-sm font-semibold text-white bg-brand-700 hover:bg-brand-800 shadow-md hover:shadow-lg transition-all">
+                Enviar Solicitud Institucional
+              </button>
+            </form>
+
+            <div id="formFeedback" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs flex items-center gap-3">
+              <span class="text-lg">✅</span>
+              <div>
+                <strong>¡Mensaje recibido con éxito!</strong>
+                <p>Nuestro equipo de SUKA MARKET se pondrá en contacto contigo a la brevedad.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-900 text-sand-200 pt-16 pb-12 border-t border-brand-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-brand-800">
+        
+        <!-- Brand Column -->
+        <div class="space-y-4 md:col-span-1">
+          <div class="flex items-center gap-3">
+            <img src="logo.jpg" alt="Logo Suka Market" class="h-10 w-10 rounded-lg object-contain bg-white p-1">
+            <span class="text-xl font-heading font-extrabold text-white">SUKA MARKET</span>
+          </div>
+          <p class="text-xs text-sand-200 leading-relaxed">
+            Entidad Sin Ánimo de Lucro fundada en 2005. Comprometida con la preservación de jardines botánicos, flora nativa y cultura sostenible en San Andrés Isla.
+          </p>
+          <div class="text-[11px] text-emerald-400 font-mono">
+            NIT: 900026193-0 • ESAL
+          </div>
+        </div>
+
+        <!-- Links Column -->
+        <div class="space-y-3">
+          <h4 class="text-sm font-heading font-bold text-white uppercase tracking-wider">Navegación</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#inicio" class="hover:text-white transition">Inicio</a></li>
+            <li><a href="#proposito" class="hover:text-white transition">Propósito & Misión</a></li>
+            <li><a href="#lineas" class="hover:text-white transition">Líneas de Acción CIIU</a></li>
+            <li><a href="#transparencia" class="hover:text-white transition">Ficha de Cámara de Comercio</a></li>
+            <li><a href="#galeria" class="hover:text-white transition">Galería Botánica</a></li>
+            <li><a href="#contacto" class="hover:text-white transition">Contacto & Sede</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal Column -->
+        <div class="space-y-3">
+          <h4 class="text-sm font-heading font-bold text-white uppercase tracking-wider">Marco Jurídico</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="politica-de-privacidad.html" class="hover:text-white transition">Política de Privacidad (Habeas Data)</a></li>
+            <li><a href="terminos-y-condiciones.html" class="hover:text-white transition">Términos y Condiciones de Uso</a></li>
+            <li><a href="#transparencia" class="hover:text-white transition">Registro Mercantil S0500322</a></li>
+            <li><a href="#transparencia" class="hover:text-white transition">Vigilancia DIAN San Andrés</a></li>
+          </ul>
+        </div>
+
+        <!-- Location Column -->
+        <div class="space-y-3">
+          <h4 class="text-sm font-heading font-bold text-white uppercase tracking-wider">Sede Institucional</h4>
+          <p class="text-xs text-sand-200 leading-relaxed">
+            Av. Juan XXIII 4 205<br>
+            San Andrés Isla, 88001<br>
+            Archipiélago de San Andrés, Providencia y Santa Catalina, Colombia
+          </p>
+          <p class="text-xs pt-1">
+            <strong>Tel:</strong> +57 304 405 3539<br>
+            <strong>Email:</strong> contacto@sukamarket.online
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-sand-300">
+        <p>© 2005 - 2026 <strong>SUKA MARKET</strong>. Todos los derechos reservados.</p>
+        <p class="text-[11px]">Entidad Sin Ánimo de Lucro registrada en San Andrés Isla • sukamarket.online</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Badge -->
+  <a href="https://wa.me/573044053539?text=Hola%20Suka%20Market,%20quisiera%20recibir%20informaci%C3%B3n" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 p-3.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white shadow-xl hover:shadow-2xl transition-all hover:scale-110 flex items-center justify-center" aria-label="Contactar por WhatsApp">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <script>
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    // Contact Form Handling
+    const form = document.getElementById('contactForm');
+    const feedback = document.getElementById('formFeedback');
+    if (form && feedback) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        feedback.classList.remove('hidden');
+        form.reset();
+        setTimeout(() => {
+          feedback.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 100);
+      });
+    }
+  </script>
+
+</body>
+</html>
